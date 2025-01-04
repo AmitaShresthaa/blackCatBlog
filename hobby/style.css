@@ -1,0 +1,91 @@
+
+body{
+    margin:0px;
+}
+
+:root{
+    --pink: rgba(200, 159, 228, 0.473);
+    --font-color: white;
+    --font-color2: rgb(59, 2, 100);
+    --box: rgba(100, 157, 51, 0.477);
+
+}
+.cat{
+    padding:32px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 8px;
+    color: var(--font-color2);
+}
+.nav-element{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+.nav-element a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-element a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.hero{
+    grid-area:hero;
+    margin:20px;
+    padding:5vh;
+    background: url(./PXL_20231126_040330562.jpg) right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.hero-text{
+    grid-area:hero;
+    margin-top:10%;
+    padding:10vh;
+    border-radius: 12px;
+    color:var(--font-color);
+    background-color: var(--box);
+    font-size: larger;
+    position: inherit;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+
+.footer-s{
+    grid-area:footer;
+    padding:50px;
+    margin: 0;
+    background-color: var(--pink);
+    color:var(--font-color2);
+}
+
+h3{
+    color: var(--font-color2);
+}
+
+h2{
+    color: var(--font-color2);
+}
+
+.blog-body{
+    padding:20px;
+    margin:10px;
+    font-size: large;
+    background-color: var(--pink);
+    /* color: var(--font-color); */
+}

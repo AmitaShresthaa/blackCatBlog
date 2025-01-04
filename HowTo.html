@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black cat Developer </title>
+    <link href="styleHowTo.css" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <div class="cat"> 
+            <h1>The Black Cat Developer</h1>
+        </div> 
+    </header>
+
+    <div class ="nav">
+        <nav>
+            <ul class="nav-element">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HowTo.html">How To Build a Blog</a></li>
+                <li><a href="hobby/index.html">Hobby </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <div class="hero">
+                 <div class="hero-text">
+                 <h1>Here we will learn about how to build and deploy your Blog using HTML, CSS, Github And Vercel</h1>
+            </div>
+        
+        </div>
+    </section>
+
+    <div class="how-to">
+        <div class="how-flex">
+            <div class="how-to-text">
+                <h3>How to create a basic blog page using just HTML and CSS</h3>
+                <h4>1. Creating directory</h4>
+                <p>In order to start your project you have to first create a fresh workspace and the first step to that is creating your new directory in your respective folder.</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Open your workspace.</li>
+                    <li>Create new folder called Blog</li>
+                    <li>Open the folder in VS code</li>
+                    <li>Create your html and css folder. In my case I have named it blog.html and style.css respective</li>
+                </ol>
+                <div>
+                    <img src="./asset/Screenshot 2024-11-23 183419.png"  class="how-to-image"/>
+                </div>
+                
+                <h4>2. Creating html and linking with CSS</h4>
+                <p>For the html to have the style component we link it with the css document in the head tag</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Open your html document.</li>
+                    <li><p>Type html5 and press enter, it should give you the basic html skeleton</p></li>
+                    <li><p>In the header tag we type  &lt;link href="style.css" rel="stylesheet"&gt. This links the two files</p></li>
+                </ol>
+                <div>
+                    <img src="./asset/Screenshot 2024-11-23 185804.png"  class="how-to-image" />
+                </div>
+
+                <h4>3. Creating the header, title and hero component</h4>
+                <p>Header and hero components are the most important part of the a website.Header is where the blog name appears whereas hero is the a large, prominent section located at the top of the homepage. 
+                   Title is the name of the page that you see in the tab bar of the website</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Change your title tag that should be next to the meta tag inside the head section to your blog name.In my case I have named it the black cat developer</li>
+                    <li>To create the header we create a header tag and than a div inside it.5</li>
+                    <li>To create the hero section. We first start with section tag. This is a semantic tag that allows the easy readability of the code.</li>
+                    <li>Now, start a div with class hero. The code snippet below will give you more detail about the class.</li>
+                </ol>
+                
+                <div>
+                    <img src="./asset/Screenshot 2024-11-24 085328.png"  class="how-to-image"/>
+                </div>
+
+                <h4>3. Styling the header and hero component</h4>
+                <p>Header and hero is first impression of the user. Therefore, it has to be eyecatchy and aesthically pleasing.</p>
+                <h5>Steps</h5>
+
+                <ol>
+                    <li>Go to your Css document add the following code as shown in the code snippet</li>
+                    <li>Here element selector is used to select the body where as a class is used to select the header and the hero classes.</li>
+                    <li>Under the header class we have just edited its background and font style where as in hero section we have added a picture to the background well.</li>
+                    <li>We have used margin in the body in order to eliminate any gap in header.</li>
+                    <li>We have also declared a root element. In this case we have used it to declare a constant color that we will be using througout the website.</li>
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2024-11-24 090456.png"  class="how-to-image"/>
+                </div>
+
+                <h4>4. Adding other components.</h4>
+                <p>For this blog we are writing about how to create a blog so I am using "h4" tag for step title and listing the steps using "ol" and "il" tag. The modt important component of this
+                    section is using div component to structure the elements.</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Create div where we will include the elements as shown in the code snippet</li>
+                    <li>We have used img tag to add image and classed it under how-to-image. We have assigned it under that particular class so that we can later edit it in the css.</li>
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2024-12-28 200344.png" class="how-to-image"/>
+                </div>
+
+                <h4>5. Adding Footer to the page </h4>
+                <p>Footer is generally used to add information about the page or the author. Footer is also used to include copyright license </p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Create a footer tag and then include the copy right message to it as shown in the code snippet</li>
+                    <li>In html we use certain code to represent symbols as you can see in the code snippet. & copy is used to create the copyright symbol.</li>
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2024-12-28 202559.png" class="how-to-image"/>
+                </div>
+
+                <h4>6. Styling the components.</h4>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Using element selector and class selector we have added style the different div containers.</li>
+                    <li>The code snippet has show how we edited the containers and added style to it.</li>
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2024-12-28 201637.png" class="how-to-image"/>
+                </div>
+
+                <h4>7. Adding the project to git.</h4>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Go to www.github.com and sign up with the your credentials.</li>
+                    <li>When you log in to your profile you can see the tab called "Repositories", click on that tab</li>
+                    <li>Click on the Green button named New</li>
+                    <li>You should get this following page. Please follow as per the code snippet.</li>
+
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2024-12-28 203512.png" class="how-to-image"/>
+                </div>
+
+                <h4>8.Pushing the project to the repository.</h4>
+                <p>Github is one of the most popular version control platfore used by programmers all aroung the world. In this project we will be using github to deploy the project online to be accessible as per needed from any where.</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>After creating the project in git go to the project directory in you PC</li>
+                    <li>Open the directory in terminal.</li>
+                    <li>Initiate a git repository in the directory using the git command "git init" in the terminal</li>
+                    <li>Add all of the files of the project using the git command "git add ." </li>
+                    <li>Commit the files previously added to git using git command, 'git commit -m "first commit"'. With this git comman a comment is required.</li>
+                    <li>Add a branch called main to the repository using the command 'git branch -M main'</li>
+                    <li>Add the remote of the repository that you created in the github in your PC using the command, 'git remote add origin https://github.com/AmitaShresthaa/blog.git'</li>
+                    <li>Finally, push the project to your github using the command git push -u origin main and press enter.</li>
+                    <li>Here is a link to git command documentation for more information of the commands we used here, </li>
+
+                </ol>
+
+                <h4>7. Adding the project to vercel.</h4>
+                <p>Vercel is a popular platform used to build and deploy web apps without the need of an additional configuration </p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Go to www.vercel.com and sign up with the your credentials.</li>
+                    <li>When you log in to your profile you can see the button called "Add New", click on that button</li>
+                    <li>Click on Project, this will take you to a new page. In order to deploy our project from github we have to first connect it to our git account.</li>
+                    <li>After connecting to you github account import the project and proceed with the Deploy button, as we do not need to change anything here fo this project. </li>
+                    <li>You website should deployed now, just click on the webiste to visit it.</li>
+                    <li><a href = "https://blog-q3cg.vercel.app/">Here is the blog we created today.</a> </a></li>
+
+                </ol>
+
+                <div>
+                    <img src="./asset/Screenshot 2025-01-04 232034.png" class="how-to-image"/>
+                </div>
+                <br>
+                <br>
+              
+    
+
+            
+
+            <div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+<footer>
+    <div class="footer-s">
+        <p>&copy; Copy Right by Amita Shrestha</p>
+    </div>
+</footer>    
+    
+</body>
+</html>
