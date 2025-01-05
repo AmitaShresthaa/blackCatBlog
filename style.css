@@ -7,6 +7,7 @@ body{
     --pink: rgba(221, 160, 160, 0.34);
 
 }
+/* Styling the header */
 .cat{
     background-color: blanchedalmond;
     padding:32px;
@@ -17,6 +18,41 @@ body{
     box-shadow: 8px;
 }
 
+/* styling the navigation bar */
+.nav-element{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+.nav-element a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-element a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px var(--font-color2);
+
+}
+
+.footer-s{
+    grid-area:footer;
+    padding:50px;
+    margin: 0;
+    background-color: rgb(58, 35, 35);
+    color:aliceblue;
+}
+
+ /* Styling the hero section */
 .hero{
     grid-area:hero;
     margin:20px;
@@ -39,77 +75,3 @@ body{
     letter-spacing: 5px;
 
 }
-
-.how-to{
-    margin:20px;
-    flex-wrap: wrap ;
-    padding-left: 40px;
-    grid-area: how-to;
-    font-size: large;
-    background-color: rgba(221, 160, 160, 0.231);
-    border-radius: 10px;
-    /* position: relative; */
-}
-
-.how-flex{
-    /* display:flex; */
-    flex-wrap: wrap;
-    padding-top:12px;
-}
-
-.nav-element{
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    padding: 20px;
-    margin: 20px;
-    align-items: center;
-}
-
-.nav-element a{
-    text-decoration: none;
-    color: black;
-
-}
-
-.nav-element a:hover{
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.how-to-text{
-    grid-area: how-to-text;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-}
-
-.how-to-image{
-    grid-area: how-to-image;
-    /* position: relative; */
-    width: 50vw;
-    height: 50vh;
-}
-.footer-s{
-    grid-area:footer;
-    padding:50px;
-    margin: 0;
-    background-color: rgb(58, 35, 35);
-    color:aliceblue;
-}
-/* 
-grid-container{
-    display:grid;
-    height:100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas: 
-        "cat cat cat"
-        "hero hero hero"
-        "how-to how-to how-to"
-        "footer-s footer-s footer-s"
-    ;
-
-} */
-
