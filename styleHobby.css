@@ -7,7 +7,8 @@ body{
     --pink: rgba(200, 159, 228, 0.473);
     --font-color: white;
     --font-color2: rgb(59, 2, 100);
-    --box: rgba(29, 27, 46, 0.477);
+    --box: rgba(29, 27, 46, 0.422);
+    --font-color3: black;
 
 }
 .cat{
@@ -18,7 +19,15 @@ body{
     text-align: center;
     box-shadow: 8px;
     color: var(--font-color2);
+    
 }
+
+.nav{
+    position: sticky;
+    top:0;
+    background-color: var(--pink);
+}
+
 .nav-element{
     display: flex;
     gap: 20px;
@@ -26,30 +35,72 @@ body{
     padding: 20px;
     margin: 20px;
     align-items: center;
+    
 }
 
 .nav-element a{
     text-decoration: none;
-    color: black;
+    color: var(--font-color3);
 
 }
 
 .nav-element a:hover{
     text-decoration: none;
-    color: black;
+    color: var(--font-color3);
     font-size: larger;
     cursor: pointer;
     text-transform: uppercase;
     text-shadow: 2px 2px 10px var(--font-color2);
 
 }
+
+.drop{
+    cursor: pointer;
+    color: var(--font-color3);
+
+}
+
+.drop:hover .dropDown {
+    color: var(--hover-glow);
+    cursor: pointer;
+    display: block;
+    
+}
+
+.drop:hover {
+    text-decoration: none;
+    color: var(--font-color3);
+    font-size: larger;
+    cursor: pointer;
+    text-shadow: 2px 2px 10px var(--font-color);
+
+}
+
+/* Styling the drop down menu */
+.dropDown{
+    display: none;
+    position: absolute;
+    background-color: var(--pink);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: var(--box);
+    padding: 10px 15px;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--font_color);
+}
+
+.dropDown li{
+    list-style-type: none;
+}
+
 .hero{
     grid-area:hero;
     margin:20px;
     padding:5vh;
     /* background: url(./asset/PXL_20231126_040330562.jpg) right no-repeat; */
     background-size: contain;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 90vh;
     animation-name: hero-background;
     animation-duration: 20s;
@@ -60,19 +111,19 @@ body{
 @keyframes hero-background{
     0% {background:url(./asset/sydneyBridge.jpg)  center no-repeat;
         background-size:contain;
-        background-attachment: fixed;}
+        }
     25%{background:url(./asset/bridgeMelb.jpg)  center no-repeat;
         background-size: contain;
-        background-attachment: fixed;}
+        }
     50%{background:url(./asset/stateLibrary.jpg)  center no-repeat ;
         background-size: contain;
-        background-attachment: fixed;}
+        }
     75%{background:url(./asset/syd.jpg)  center no-repeat ;
         background-size: contain;
-        background-attachment: fixed;}
+        }
     100%{background:url(./asset/sydneyBridge.jpg) center no-repeat;
         background-size: contain;
-        background-attachment: fixed;}
+        }
     
 }
 
