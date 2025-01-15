@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black cat Developer How To </title>
+    <link href="styleHowTo.css" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <div class="cat"> 
+            <h1>The Black Cat Developer</h1>
+        </div> 
+    </header>
+
+    <div class ="nav">
+        <nav>
+            <ul class="nav-element">
+                <li><a href="index.html">Home</a></li>
+                <li class = "drop"> How To ..
+                    <div class = "dropDown">
+                        <ul>
+                            <li><a href= "HowTo.html">How To Creat A blog using HTML and CSS</a></li>
+                            <li><a href= "CalcHowTo.html">How To Creat A Calculator Using HTML and JavaScript</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class = "drop"> Blog
+                    <div class = "dropDown">
+                        <ul>
+                            <li><a href= "hobby.html">Architecture exploration </a></li>
+                            <li><a href= "MentalHealth.html">Digital Misuse of Mental Health Terminoligies</a></li>
+
+                        </ul>
+                </li>
+                    </div>
+
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <div class="hero">
+                 <div class="hero-text">
+                 <h1>Here we will learn about how to build and deploy a Calculator using HTML, CSS and JavaScript</h1>
+            </div>
+        
+        </div>
+    </section>
+
+    <div class="how-to">
+        <div class="how-flex">
+            <div class="how-to-text">
+                <h2>Starting the project</h2>
+                <h4>Creating directory</h4>
+                <p>In order to start your project you have to first create a fresh workspace and the first step to that is creating your new directory in your respective folder.</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Open your workspace.</li>
+                    <li>Create new folder called JSCalculator</li>
+                    <li>Open the folder in VS code</li>
+                    <li>Create your html, css and java script file. Generally, we name them as index.html, style.css and script.js respectively </li>
+                </ol>
+                             
+                <h4>Linking the files </h4>
+                <p>For the html to have the style component we link it with the css document as done in the previous blog <a href = "HowTo.html" target = "_blank">Here</a> in the head tag. In order to add JavaScript to your html we link it using this following code under the body tag, as shown below</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Open your html document.</li>
+                    <li><p>Type html5 and press enter, it should give you the basic html skeleton</p></li>
+                    <li> Add this following code to the head of the html:
+                        <pre>
+                            <code>
+                                 &lt;link href="filename.css" rel="stylesheet"> 
+                            </code>
+                        </pre>
+                    </li>
+                    <li> Add this following code to the head of the html:
+                        <pre>
+                            <code>
+                                &lt;script src = "script.js"></script>
+                            </code>
+                        </pre>
+                    </li>   
+                </ol>
+               
+                                
+                <h2>Creating the UI of the Calculator</h2>
+                <p>In this project we will using Flex containers to structure the Calculator. 
+                <h5>Steps</h5>
+                <ol>
+                    <li>Title is the name of the page that you see in the tab bar of the website so we change the title tag that should be next to the meta tag inside the head section to "Calculator".</li>
+                    <li>Inorder to create a Calculator layout we create a div called wrapper that wraps the whole body of the calculator which will be in flex display. Button tag are used to create buttons for the calculator whereas the display is just a div as shown in the code snippet</li>
+                    <li>The code snippet below:
+                        <pre>
+                            <code>
+                                &lt;div class = "wrapper">
+                                 &lt;div class = "calculator-container">
+                                      <!-- output box -->
+                                      &lt;div class = "display-box">
+                                              0.00
+                                      &lt;/div>
+                                       <!-- Buttons -->
+                                        &lt;div class = "flex-container">
+                                            &lt;button> AC &lt;/button>
+                                            &lt;button> C &lt;/button>
+                                            &lt;button> % &lt;/button>
+                                            &lt;button> / &lt;/button>
+                                        &lt;/div>
+                              
+                                        &lt;div class = "flex-container">
+                                            &lt;button> 9 &lt;/button>
+                                            &lt;button> 8 &lt;/button>
+                                            &lt;button> 7 &lt;/button>
+                                            &lt;button> * &lt;/button>
+                                        &lt;/div>
+                              
+                                        &lt;div class = "flex-container">
+                                            &lt;button> 6 &lt;/button>
+                                            &lt;button> 5 &lt;/button>
+                                            &lt;button> 4 &lt;/button>
+                                            &lt;button> - &lt;/button>
+                                        &lt;/div>
+                              
+                                        &lt;div class = "flex-container">
+                                            &lt;button> 3 &lt;/button>
+                                            &lt;button> 2 &lt;/button>
+                                            &lt;button> 1 &lt;/button>
+                                            &lt;button> + &lt;/button>
+                                        &lt;/div>
+                              
+                                        &lt;div class = "flex-container">
+                                            &lt;button> 0  &lt;/button>
+                                            &lt;button> .  &lt;/button>
+                                            &lt;button class = " equal-button"> = &lt;/button>
+                                        &lt;/div>
+
+                                    &lt;/div>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
+                
+                <h4>Styling the Calculator</h4>
+                <h5>Steps</h5>
+
+                <ol>
+                    <li>Here, we are using wrapper as the base body of the calculator. Its display should be flex inorder to align the items in center of the page.The class "display-box" is used to display the output and the buttons when hovered changes color.</li>
+                    <li>The code below should be in your css folder.<pre>
+                            <code>
+                                .wrapper{
+                                    min-height: 100vh;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                .calculator-container{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap:12px;
+                                    width: 500px;
+                                }
+                                
+                                .display-box{
+                                    border: 1px solid black;
+                                    border-radius: 8px;
+                                    padding: 16px;
+                                    text-align: end;
+                                    font-size: 24px;
+                                }
+                                
+                                .flex-container{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    gap:12px;
+                                }
+                                
+                                button{
+                                    border-radius: 8px;
+                                    flex:1;    
+                                    height: 50px;
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                
+                                }
+                                
+                                button:hover{
+                                    background-color: rgb(239, 189, 232);
+                                }
+                                
+                                .equal-button{
+                                    flex: 2;
+                                }
+                                
+                        </code>
+                        </pre>
+                    </li>
+                    
+                </ol>
+   
+                <h2>Adding JavaScript to make the calculator functional</h2>
+                <h4>1. Accessing the html elements from JS file.</h4>
+                <p>HTML and CSS is used to make the body of the calculator so now we will be using JavaScript to make it functional like an actual calculator.DOM manipulation concept of JS is the key to make this calculator functional.</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Inorder to access the classes in html document from the script file we use the .querySeletor(classname). At first we will be accessing the display and calculator buttons using the following code in the script file.  
+                        <pre>
+                            <code>
+                                const displayBox = document.querySelector('.display-box')
+                                const calcBtn = document.querySelectorAll('button')
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Here, the argument inside the querySelector is the name of the class used in the html file.</li>
+                </ol>
+
+                <h4>2. Displaying the input in the display section</h4>
+                <h5>Steps</h5>
+                <p>We create a function that will display the input in the screen.For that we will have to create a variable that will take the input after the event is being called.Here we will be creating a funtion react to the on click action of the button, such functions are called event listners. This event listner will contain another funtion that will handle the input from the event listner to give the desired output, such functions are called event handlers. </p>
+                <ol>
+                    <li>Here is the event listner function, we will be using forEach loop to iterate over all the buttons of the calculator. The loop accpets an argument,button in this case. The "buttonValue" constant takes value of the button clicked. Here the value of the button is its inner text i.e. it's name set in html.The onclick function is a event listner function provided by the JavaScript library that tell the program what to do after the click. 
+                        <pre>
+                            <code>
+                                calcBtn.forEach(btn => {
+                                    const buttonValue = btn.innerText
+                                    btn.onclick = () => {
+                                        handleButtonAction(buttonValue)  
+                                    }
+                                })                                
+                            </code>
+                        </pre>
+                    </li>
+
+                    <li>Writing the handler function and a funtion that displays the output.
+                        <pre>
+                            <code>
+                                // This variable store all of the input
+
+                                let displayValue = ""
+
+                                //This displays the input value as a result of onlick actions
+                                
+                                const display = () => {
+                                    displayBox.innerText = displayValue || "0.00"
+                                }
+                                
+                                //This function makes sure that more than one input can be displayed into the screen by using string concatination technique of string manipulation
+                                const handleButtonAction = (buttonValue) => {
+
+                                    displayValue = displayValue + buttonValue
+                                    display()
+                                }
+                                
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
+
+                <h4>3. Making Aritimetical functions work </h4>
+                <p>Until now we have created a calculator that take input and displays it. But the main function of a caluclator is still to be written, the calculation. We have to now make all of he arithmentical symbols practical instead of just displaying it in the screen.We do this using an exisiting function provided by JS library, eval(variableName).</p>
+                <h5>Steps</h5>
+                <ol>
+                    <li>We have to make the "=" button functional, so that the calculator is able to do its calculation.We do this by writing a new function inside the event handler. 
+                        <pre>
+                            <code>
+                                //This function evaluates the displayValue that store all the input string and then calculation is done using the eval function from the JS library. This function returns a number, Therefore we have to typecast it into a string to display it to prevent error in future. 
+
+                                if(buttonValue === "=" || buttonValue === "Enter"){
+                                    const result = eval(displayValue)
+                                    displayValue = String(result)
+                                    // update last operator in the expression
+                                    lastOperator = ""
+                            
+                                    // Prank logic
+                                    const prankValue = generateRandomNumber();
+                                    if(prankValue){
+                                        displayBox.classList.add("prank ")
+                                        pAudio.play();
+                                    }
+                            
+                                    display()
+                                    return
+                                }
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Making AC (All clear) button and C button functional by adding these funtion to the handler class below the equals function.
+                        <pre>
+                            <code>
+                                //Clearing the screen
+                                if(buttonValue === "AC"){
+                                    displayValue = ""
+                                    display()
+                                    return
+                                }
+                                //Remove the last character of the screen
+                                if(buttonValue === "C"){
+                                    displayValue = displayValue.slice(0, -1);
+                                    display()
+                                    return
+                                }
+                            
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
+
+
+                
+                <h4>Making sure only valid expression are acceptable by the calculator since any invalid expressions such as "2..2", "%2",aren't accepted by the eval function</h4>
+                <h5>Steps</h5>
+                <ol>
+                    <li>Making sure only valid expression are used. These code are added unded the handler function
+                        <pre>
+                            <code>
+                                //This variable take the last operater entered by the user
+                                let lastOperator = ""
+
+                                // 1.Some operaters aren't allowed in the beginning of number in our case the symboles in the array aren't allow. The .inlcuded function evaluates if the buttonValue consists of any element present in the array. 
+                                    if(["%","/","*"].includes(buttonValue) && !displayValue){    
+                                        return
+                                    }
+                                // 2.Dont allow two consecutive opeator
+                                    if(["%","/","*","-","+"].includes(buttonValue)){
+                                        const lastCharacter = displayValue.slice(-1);
+                                        
+                                        // update the last operator in the expression
+                                        lastOperator = buttonValue
+                                        if(["%","/","*","-","+"].includes(lastCharacter)){
+                                            displayValue = displayValue.slice(0, -1);
+                                        }
+                                    }
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Making sure invalid numbers aren't entered such as consecutive decimal point or two decimal point in a number such as  222.22.22 
+                        <pre>
+                            <code>
+                                if(buttonValue === "."){ 
+                                    // find the current number set, i.e number after the operator
+                                    const lastOperatorIndex = displayValue.lastIndexOf(lastOperator)
+                                    const currentNumberSet = displayValue.slice(lastOperatorIndex) || displayValue
+                                    console.log("currentNumberSet", currentNumberSet);
+                                    
+                                    if(currentNumberSet.includes(".")){
+                                    return
+                                    }
+                                }
+                            
+                            </code>
+                        </pre>
+                    </li>
+                 
+                </ol>
+
+                <h2 >Finally, we have a functional calculator that can be used, here.</h2>
+                
+                <h3 id="pageBreak"> &#10058;&#10058;&#10058;</h3>
+
+                <br>
+                <h2>Hosting the project in Git and deploying in Vercel</h2>
+                <p>To be able to do this step just visit my previous blog that explains you these steps. <a href = "https://black-cat-blog.vercel.app/HowTo.html">Here</a> </a></li></p>
+              
+            <div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+<footer>
+    <div class="footer-s">
+        <p>&copy; Copy Right by Amita Shrestha</p>
+    </div>
+</footer>    
+    
+</body>
+</html>
