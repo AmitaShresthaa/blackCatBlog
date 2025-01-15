@@ -24,7 +24,7 @@ body{
     grid-area:hero;
     margin:20px;
     padding:5vh;
-    height: 50vh;
+    height: 40vh;
       
 }
 
@@ -40,8 +40,6 @@ body{
     position: inherit;
     text-align: left;
     letter-spacing: 5px;
-    /* color: blanchedalmond; */
-
 
 }
 
@@ -57,7 +55,6 @@ body{
 }
 
 .how-flex{
-    /* display:flex; */
     flex-wrap: wrap;
     padding-top:12px;
 }
@@ -144,7 +141,7 @@ body{
     grid-area: how-to-image;
     /* position: relative; */
     width: 50vw;
-    height: 50vh;
+    height: 40vh;
 }
 .footer-s{
     grid-area:footer;
@@ -153,18 +150,15 @@ body{
     background-color: rgb(58, 35, 35);
     color:aliceblue;
 }
-/* 
-grid-container{
-    display:grid;
-    height:100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas: 
-        "cat cat cat"
-        "hero hero hero"
-        "how-to how-to how-to"
-        "footer-s footer-s footer-s"
-    ;
 
-} */
+code {
+    background-color: #000000;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color:aliceblue;
+  }
 
+#pageBreak{
+    text-align: center;
+}
